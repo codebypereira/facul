@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Travel Now - </title>
+    <title>Travel Now - Rio de Janeiro</title>
 </head>
 <body>
-    
+    <h1>Rio de Janeiro - A Cidade Maravilhosa</h1>
+    <p>Quem não gostaria de conhecer a cidade brasileira mais conhecida no exterior? <br> A capital carioca se destaca muito pela sua beleza natural, como as praias de Ipanema, Copacabana e Barra da Tijuca. <br> Também muito famosa pelo Pão de Açucar, e claro, o Cristo Redentor: a cara do Rio de Janeiro. <br> Também não podemos nos esquecer do famoso carnaval carioca que atrai turistas de todas as partes do mundo para desfrutar desse grande festival! <br> E você pode ser o próximo a conhecer a cidade a partir de algum de nossos planos de turismo no Rio de Janeiro!</p>
+    <img src="imagens/errejota.jpg" alt="Rio de Janeiro" title="Rio de Janeiro" width="550">
+    <ol>
+        <legend>Top 3 atrações no Rio de Janeiro</legend>
+        <li>Cristo Redentor</li>
+        <li>Escadas de Selaron</li>
+        <li>Mureta da Urca</li>
+    </ol>
+
+
+    <p>Descubra mais sobre o que fazer no <a href="https://turistandorj.com/" target="_blank" rel="external">Rio de Janeiro</a></p>
+    <a href="#reserva">Fazer Reserva</a>
+
+
+    <table border="1">
+        <caption>Pacotes Disponíveis</caption>
+        <thead>
+            <tr>
+                <th>Pacote</th>
+                <th>Duração</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samba & Sol</td>
+                <td>3 dias</td>
+                <td>300€</td>
+            </tr>
+            <tr>
+                <td>Carioca Experience</td>
+                <td>5 dias</td>
+                <td>450€</td>
+            </tr>
+            <tr>
+                <td>Maravilha do Rio</td>
+                <td>7 dias</td>
+                <td>630€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Voos não incluídos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <form action="cadastro.php" id="reserva">
+
+        <p>
+            <label for="inome">Nome Completo:</label>
+            <input type="text" name="nome" id="inome" required placeholder="ex: João Santos Silva">
+        </p>
+
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required placeholder="ex: seuemail@gmail.com">
+        </p>
+
+        
+
+        <p>
+            <input type="submit" value="Reservar">
+        </p>
+    </form>
 </body>
 </html>
