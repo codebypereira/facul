@@ -4,75 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Travel Now - Rio de Janeiro</title>
 </head>
-<body>
-    <h1>Rio de Janeiro - A Cidade Maravilhosa</h1>
-    <p>Quem não gostaria de conhecer a cidade brasileira mais conhecida no exterior? <br> A capital carioca se destaca muito pela sua beleza natural, como as praias de Ipanema, Copacabana e Barra da Tijuca. <br> Também muito famosa pelo Pão de Açucar, e claro, o Cristo Redentor: a cara do Rio de Janeiro. <br> Também não podemos nos esquecer do famoso carnaval carioca que atrai turistas de todas as partes do mundo para desfrutar desse grande festival! <br> E você pode ser o próximo a conhecer a cidade a partir de algum de nossos planos de turismo no Rio de Janeiro!</p>
-    <img src="imagens/errejota.jpg" alt="Rio de Janeiro" title="Rio de Janeiro" width="550">
-    <ol>
-        <legend>Top 3 atrações no Rio de Janeiro</legend>
-        <li>Cristo Redentor</li>
-        <li>Escadas de Selaron</li>
-        <li>Mureta da Urca</li>
-    </ol>
+<body id="topo">
+    <main>
+        <header>
+            <h1>Rio de Janeiro - A Cidade Maravilhosa</h1>
+            <p>Quem não gostaria de conhecer a cidade brasileira mais conhecida no exterior? <br> A capital carioca se destaca muito pela sua beleza natural, como as praias de Ipanema, Copacabana e Barra da Tijuca. <br> Também muito famosa pelo Pão de Açucar, e claro, o Cristo Redentor: a cara do Rio de Janeiro. <br> Também não podemos nos esquecer do famoso carnaval carioca que atrai turistas de todas as partes do mundo para desfrutar desse grande festival! <br> E você pode ser o próximo a conhecer a cidade a partir de algum de nossos planos de turismo no Rio de Janeiro!</p>
+            <img src="imagens/errejota.jpg" alt="Rio de Janeiro" title="Rio de Janeiro" width="550">
+        </header>
+        <article>
+            <ol>
+                <legend>Top lugares para visitar</legend>
+                <li>Cristo Redentor</li>
+                <img src="imagens/cristoo.webp" alt="CRISTO REDENTOR">
+                <li>Escadaria Selarón</li>
+                <img src="imagens/selaronn.webp" alt="ESCADARIA SELARÓN">
+                <li>Museu do Amanhã</li>
+                <img src="imagens/museuu.webp" alt="MUSEU DO AMANHÃ">
+                <li>Parque Lage</li>
+                <img src="imagens/lagee.webp" alt="PARQUE LAGE">
+                <li>Maracanã</li>
+                <img src="imagens/maracana.jpg" alt="MARACANÃ">
+            </ol>
+        </article>
+        <p>Descubra mais sobre o que fazer no <a href="https://turistandorj.com/" target="_blank" rel="external">Rio de Janeiro</a></p>
+        <a href="#reserva">Fazer Reserva</a>
+        <table border="1">
+            <caption>Pacotes Disponíveis</caption>
+            <thead>
+                <tr>
+                    <th>Pacote</th>
+                    <th>Duração</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samba & Sol</td>
+                    <td>3 dias</td>
+                    <td>300€</td>
+                </tr>
+                <tr>
+                    <td>Carioca Experience</td>
+                    <td>5 dias</td>
+                    <td>450€</td>
+                </tr>
+                <tr>
+                    <td>Maravilha do Rio</td>
+                    <td>7 dias</td>
+                    <td>630€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Voos não incluídos</td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="cadastro.html" id="reserva">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome Completo:</label>
+                    <input type="text" name="nome" id="inome" required placeholder="ex: João Santos Silva">
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="ex: seuemail@dominio.com">
+                </p>
+                <p>
+                    <label for="itel">Contacto Telefônico:</label>
+                    <input type="tel" name="tel" id="itel" placeholder="+351 123 456 789" required>
+                </p>
+            </fieldset>
 
+            <fieldset>
+                <legend>Informações da Reserva</legend>
 
-    <p>Descubra mais sobre o que fazer no <a href="https://turistandorj.com/" target="_blank" rel="external">Rio de Janeiro</a></p>
-    <a href="#reserva">Fazer Reserva</a>
+                <p>
+                    <label for="itipo">Tipo de Viagem:</label>
+                    <input type="radio" name="tipo" id="itipo">Relax
+                    <input type="radio" name="tipo" id="itipo">Aventura
+                    <input type="radio" name="tipo" id="itipo">Cultural
+                </p>
 
+                <p>
+                    <label for="icor">Cor do Bilhete:</label>
+                    <input type="color" name="cor" id="icor" value="#efb810">
+                </p>
 
-    <table border="1">
-        <caption>Pacotes Disponíveis</caption>
-        <thead>
-            <tr>
-                <th>Pacote</th>
-                <th>Duração</th>
-                <th>Preço</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Samba & Sol</td>
-                <td>3 dias</td>
-                <td>300€</td>
-            </tr>
-            <tr>
-                <td>Carioca Experience</td>
-                <td>5 dias</td>
-                <td>450€</td>
-            </tr>
-            <tr>
-                <td>Maravilha do Rio</td>
-                <td>7 dias</td>
-                <td>630€</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Voos não incluídos</td>
-            </tr>
-        </tfoot>
-    </table>
+                <p>
+                    <label for="idest">Escolhe o seu destino:</label>
+                    <input type="text" name="dest" id="idest" list="lstdest">
+                    <datalist id="lstdest">
+                        <option>Cristo Redentor</option>
+                        <option>Pão de Açucar</option>
+                        <option>Escadas de Selaron</option>
+                        <option>Museu do Amanhã</option>
+                        <option>Parque Lage</option>
+                    </datalist>
+                </p>
 
-
-    <form action="cadastro.php" id="reserva">
-
-        <p>
-            <label for="inome">Nome Completo:</label>
-            <input type="text" name="nome" id="inome" required placeholder="ex: João Santos Silva">
-        </p>
-
-        <p>
-            <label for="iemail">Email:</label>
-            <input type="email" name="email" id="iemail" required placeholder="ex: seuemail@gmail.com">
-        </p>
-
+                <p>
+                    <label for="iprice">Simulador de Preço:</label>
+                    <input type="range" name="price" id="iprice" min="1" max="3500" value="1750">
+                    <output name="price" id="iprice">3500€</output>
+                </p>
+            </fieldset>
         
-
-        <p>
-            <input type="submit" value="Reservar">
-        </p>
-    </form>
+            <p>
+                <input type="submit" value="Reservar">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Rafael Pereira - <a href="#topo">Voltar ao Topo</a></p>
+    </footer>
 </body>
 </html>
