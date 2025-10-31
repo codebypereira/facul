@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a6d1ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;            /* largura fixa */
+    max-width: 90%;          /* limite responsivo */
+    height: auto;
+    background-color: rgb(47, 122, 156);
+    text-align: center;
+
+    /* Box Model (Padding, Margin, Border, Box-sizing) */
+
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    /* Borders, Backgrounds e Sombras */
+
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom right,  #5f0de4, #892ead);
+    border: 2px solid #235ecc;
+    border-radius: 15px;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.486);
+
+    
+}
+
+/* Detalhes Internos */
+
+.card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1.7px solid;
+}
+
+.card h2 {
+    margin-top: 1rem;
+    color: #000000;
+}
+
+.card p {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1707f3;
+}
