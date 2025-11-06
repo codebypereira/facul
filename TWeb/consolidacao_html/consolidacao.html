@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Ficha de Consolidação</title>
+    
 </head>
 <body id="home">
     <header>
@@ -11,20 +13,20 @@
     </header>
     <nav>
         <a href="#home">Home</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#info">More Info</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#form">Contacte-me</a>
     </nav>
     <main>
         <section id="sobre">
             <p>Esse é um site <strong>&quot;teste&quot;</strong> para consolidação de <em>HTML.</em></p>
         </section>
-        <section id="galeria">
+        <section id="gallery">
             <h2>Galeria de Fotos</h2>
             <figure>
                 <img src="media/corinthiannns.webp" alt="Logo do Corinthians" title="Logo do Corinthians">
-                <figcaption>SPORT CLUB CORINTHIANS PAULISTA</figcaption>
+                <figcaption>O maior time do Brasil :)</figcaption>
             </figure>
-            <hr>
+            
 
             <audio src="media/Among Us Impostor Sound Effect.mp3" controls></audio>
             <iframe 
@@ -37,7 +39,7 @@
 
         </section>
 
-        <hr>
+        
 
         <aside>
             <ul>
@@ -47,23 +49,29 @@
                 <li><a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a></li>
             </ul>
         </aside>
-        <hr>
-        <form action="cadastro.html">
+    
+        <form action="extra_pages/cadastro.html" method="get" autocomplete="off" id="form"">
             <fieldset>
                 <legend>Deixe-nos o seu contacto!</legend>
 
                 <p>
-                    <label for="iname">Nome:</label>
-                    <input type="text" name="name" id="iname" required placeholder="ex: João Silva">
+                    <div class="input-box">
+                        <input type="text" name="name" id="iname" required  autocomplete="none">
+                        <label for="iname" class="placeholder"><span>N</span><span>o</span><span>m</span><span>e</span></label>
+                    </div>
                 </p>
 
                 <p>
-                    <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail" required placeholder="ex: email@dominio.com">
+                    <div class="input-box">
+                        <input type="email" name="email" id="iemail" required>
+                        <label for="iemail" class="placeholder"><span>E</span><span>m</span><span>a</span><span>i</span><span>l</span></label>
+                    </div>
                 </p>
 
                 <p>
-                    <textarea name="msg" id="imsg" placeholder="Informações extras"></textarea>
+                    <div class="input-box">
+                        <textarea name="msg" id="imsg" placeholder="Informações extras"></textarea>
+                    </div>
                 </p>
                 <p>
                 <input type="submit" value="Confirmar">

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 * {
+    text-align: center;
+    margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -38,6 +40,10 @@ ul > h2 {
     text-align: center;
     font-size: 1.2em;
     color: rgb(197, 158, 60);
+}
+
+input:active {
+    background-color: rgb(255, 0, 191);
 }
 
 footer {

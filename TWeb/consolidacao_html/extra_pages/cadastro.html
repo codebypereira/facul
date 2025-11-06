@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contacto</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f4c2f3;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        main {
+            background: #fff8dc;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.404);
+            max-width: 500px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease forwards 0.3s;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 4px solid #4caf50;
+            position: relative;
+            margin-bottom: 20px;
+            animation: scaleUp 0.5s ease forwards 0.3s;
+        }
+
+        .checkmark::after {
+            content: '';
+            position: absolute;
+            left: 22px;
+            top: 40px;
+            width: 20px;
+            height: 40px;
+            border-right: 4px solid #4caf50;
+            border-bottom: 4px solid #4caf50;
+            transform: rotate(45deg);
+            transform-origin: center;
+            animation: drawCheck 0.5s ease forwards 0.8s;
+            opacity: 0;
+        }
+
+        /* Animações */
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes drawCheck {
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: white;
+            background: #3679ff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            color: #275bcc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="checkmark"></div>
+        <h1>Muito obrigado por nos deixar seu contacto!</h1>
+        <p>Responderemos o mais breve possível!</p>
+        <a href="../consolidacao.html" target="_self">Voltar ao site</a>
+    </main>
+</body>
+</html>
