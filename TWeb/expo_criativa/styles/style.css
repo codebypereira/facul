@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mapa {
+    background: url(../images/mapa_rj.jpg) no-repeat;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-size: cover;
+
+}
+
+.pin {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 2;
+    transform: translate(-50%, -100%);
+}
+
+.pin img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pin1 {
+    position: absolute;
+    top: 26%;
+    left: 55.6%;
+}
+
+.pin2 {
+    position: absolute;
+    top: 24.4%;
+    left: 62.7%;
+}
