@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-.mapa {
+.map {
     background: url(../images/mapa_rj.jpg) no-repeat;
     position: relative;
     width: 800px;
@@ -45,4 +45,49 @@ h1 {
     position: absolute;
     top: 24.4%;
     left: 62.7%;
+}
+
+.pin3 {
+    position: absolute;
+    top: 53%;
+    left: 40%;
+}
+
+.pin::after {
+    content: attr(data-lugar);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.808);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.pin:hover::after {
+    opacity: 1;
+}
+
+.help {
+    position: fixed;
+    bottom: 21.1%;
+    left: 74.5%;
+    border-bottom-right-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.199);
+    border: none;
+}
+
+.help:hover {
+    background-color: black;
 }
