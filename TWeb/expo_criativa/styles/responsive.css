@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content news"
+    "footer footer footer";
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.session {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.171);
+    transition: transform 0.2s;
+}
+
+.session:hover {
+    transform: scale(1.03);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.news {
+    grid-area: news;
+    color: white;
+    background-color: #264653;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width = 992px) {
+    .program {
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width = 600px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    .program {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "content"
+        "sidebar"
+        "footer";
+        
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width = 1200px) {
+    body {
+        background-color: #e0f7fa;
+    }
+
+    .program {
+        gap: 20px;
+    }
+}
